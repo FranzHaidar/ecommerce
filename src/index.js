@@ -12,6 +12,12 @@ $(function(){
     $( ".add-to-cart-btn" ).on( 'click', function (e){
         alert('إضافه المنتج الى عربه الشراء');
     });
+    $('#copyright').text("جميع الحقوق محفوظة"+new Date().getFullYear());
+
+    $('.product-option input[type="radio"]').change(function(){
+        $(this).parents('.product-option').siblings().removeClass('active');
+        $(this).parents('.product-option').addClass('active');
+    });
 
 });
 

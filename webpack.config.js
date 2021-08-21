@@ -3,7 +3,6 @@ var HtmlWebpackPlugin =require("html-webpack-plugin");
 var MiniCssExtractPlugin =require("mini-css-extract-plugin");
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var webpack = require('webpack');
-
 module.exports = {
   entry:  {
     app:'./src/index.js'
@@ -11,7 +10,7 @@ module.exports = {
   
   output: {
     path: path.join(__dirname, "/dist"),
-    publicPath:'',
+    publicPath:'./',
     filename: "main.js"
   },
   mode: "development",
@@ -38,7 +37,7 @@ module.exports = {
           },
 
           {
-            test: /\.css$/i,
+            test: /\.(sa|sc|c)ss$/,
             use: [
                 {
                 loader:MiniCssExtractPlugin.loader,
@@ -46,7 +45,7 @@ module.exports = {
                     publicPath: '../',
                 },
                 },
-                'css-loader',
+                'css-loader'
             ]
         },
 
@@ -93,6 +92,11 @@ module.exports = {
           template: "./src/index.html",
 
       }),
+      new HtmlWebpackPlugin({
+        filename:"product.html",
+        template: "./src/product.html",
+
+    }),
       new MiniCssExtractPlugin({
           filename: "css/style.css"
       }),

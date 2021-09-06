@@ -1,0 +1,69 @@
+@import './variables';
+@import './custom-table';
+@import './mixins';
+@import './sale';
+@import './slider';
+@import './custom.scss';
+
+.custom-form-control,
+.custom-btn
+{
+    border: 1px solid #EBEBEB;
+    box-shadow: none !important;
+    border-radius: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding:6px 16px 7px 16px;
+    color:#868686;
+}
+.custom-btn-danger{
+    color: #ff5a5f;
+    border-color: #ff5a5f;
+    background-color: transparent;
+    border-radius: 3px;
+}
+.custom-btn-danger:hover,
+.custom-btn-danger:active,
+.custom-btn-danger:focus,
+.custom-btn-danger:active:focus,
+.custom-btn-danger:active:hover{
+    color: #C2101E;
+    border-color: #C2101E;
+    background-color: transparent;
+}
+
+.custom-navbar .container .custom-form-control:focus{
+    border-color: $btn-danger-color-dark;
+    box-shadow: 0 0 2px 0 $btn-danger-color-dark;
+}
+.custom-btn:hover{
+    background-color: #d4d4d4;
+    border: 1px solid #8c8c8c;
+    color:$btn-primary-color-dark;
+}
+
+    .custom-btn-primary{
+        @include button-style($brand-primary)
+    }
+    
+.custom-btn-primary2{
+    color:#555;
+    background-color: $brand-primary;
+    border:$brand-primary;
+
+
+&:hover,
+&:active,
+&:focus,
+&:active:focus,
+&:active:hover{
+    background-color: $btn-primary-color-dark;
+    border-color:$btn-primary-color-dark;
+    color: #000;
+}
+}
+    
+
+.custom-btn-danger{
+    @include button-style($brand-danger)
+}

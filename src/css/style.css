@@ -459,7 +459,7 @@ h3.custom-heading{
     max-width: 260px;
     margin: auto;
 }
-#newsletter .input{
+input[type=email], input[type="number"]{
     direction: rtl;
     text-align: right;
 }
@@ -654,6 +654,215 @@ PRODUCT PAGE
     margin-right: -8px;
     margin-left: -8px;
 }
+/*************
+***************
+ checkout PAGE
+ ***********
+ **************/
+ .custom-table .custom-media img{
+     width: 80px;
+     height: 80px;
+     border: 1px solid #EBEBEB;
+     margin-left: 10px;
+ }
+
+ .custom-table .custom-media h4{
+     font-size: 18px;
+     margin: 12px 0;
+ }
+ .custom-table .quantity{
+     width: 56px;
+     height: 34px !important;
+     padding: 0px 8px;
+     margin: auto;
+ }
+ .custom-table th,
+ .custom-table td{
+     padding: 15px;
+     border-bottom: 1px solid #EBEBEB;
+     border-top: 1px solid #EBEBEB;
+     font-size: 120%;
+
+ }
+ .custom-table th:first-child,
+ .custom-table td:first-child{
+     width: 50%;
+ }
+
+ .custom-table th:not(:first-child),
+ .custom-table td:not(:first-child){
+     text-align: center;
+ }
+
+ .custom-table th{
+     color: #C2C2C2;
+     font-weight: normal;
+ }
+ .custom-btn-danger{
+     color: #ff5a5f;
+     border-color: #ff5a5f;
+     background-color: transparent;
+     border-radius: 3px;
+ }
+ .custom-btn-danger:hover,
+ .custom-btn-danger:active,
+ .custom-btn-danger:focus,
+ .custom-btn-danger:active:focus,
+ .custom-btn-danger:active:hover{
+     color: #C2101E;
+     border-color: #C2101E;
+     background-color: transparent;
+ }
+ .custom-table .custom-media{
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-bottom: 15px;
+ }
+ .custom-table th:first-child{
+     padding-right: 20px;
+ }
+.custom-table tfoot td{
+    border-bottom: none;
+    font-size: 150%;
+}
+.custom-table .total-price *{
+    color: #000;
+}
+.custom-table .total-price .custom-text-muted .custom-text-muted{
+    color: #A9A9A9;
+}
+/*******************************************
+******************************************
+*********************************************
+payment PAGE
+********************************************8
+******************************************88
+**********************************************/
+.custom-input-details{
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0px 16px;
+    font-size: 18px;
+    width: 97%;
+}
+.custom-form-control:focus{
+    border-color: #b86d07;
+    box-shadow:0 0 1px #b86d07;
+}
+#credit-card-info{
+    margin-right: 3%;
+}
+/***********************************************************************
+*************************************************************************
+SEARCH PAGE ************************************************************
+**********************************************************************88
+************************************************************************/
+#form-advanced-search{
+    border: 1px solid #EBEBEB;
+}
+#form-advanced-search .custom-panel{
+    border: none;
+    padding: 5px;
+}
+.custom-panel .card-header{
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 7px 10px 13px;
+}
+.custom-list-group>.list-group-item{
+    border: none;
+    padding: 0 10px 14px 0;
+}
+.custom-list-group>.list-group-item:last-child{
+    padding: 0 10px 0px 0;
+}
+#form-advanced-search label{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*تنسيق مكون البحث حسب السعر*/
+.ui-slider{
+    margin: 25px 0 15px;
+    height: 2px !important;
+}
+/*المقابض*/
+.ui-slider .ui-slider-handle{
+    background-color: #F8AD47 !important;
+    border: none !important;
+    border-radius: 50%;
+    height: 12px !important;
+    width: 12px !important;
+    top: -6px !important;
+}
+
+/*المجال*/
+.ui-slider .ui-slider-range{
+    border: 1px solid #F8AD47 !important;
+    top: -1px !important;
+}
+.custom-pagination li a{
+    border: 1px solid #EBEBEB;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 3px;
+    margin-left: 3px;
+    color: #c2c2c2;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.custom-pagination li.active a{
+    background-color: #F8AD47;
+    color: #fff;
+    border-color: #F8AD47;
+}
+
+.custom-pagination li a:active,
+.custom-pagination li a:hover,
+.custom-pagination li a:focus{
+    color: #AB7731;
+    border-color: #AB7731;
+}
+.custom-pagination{
+    margin: 25px 0;
+}
+#search-results .custom-thumbnail{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+/***************************************88
+***************************************
+CONTACT PAGE 
+**************************************
+**********************************888**/
+#map{
+    padding: 0;
+}
+#contact-options h4{
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.heading-with-border-bottom{
+    margin-bottom: 20px;
+}
+#contact-info{
+    margin-bottom: 25px;
+}
+#contact-info .fa-lg{
+    color: #f3af41;
+    font-size: 18px;
+    margin: 10px 10px 7px 10px;
+    width: 25px;
+    text-align: center;
+}
+#contact-options textarea{
+    height: 128px !important;
+}
+#contact-options{
+    margin-bottom: 25px;
+}
 /*************************************
 ************************************/
 /********* MEDIA QUERY**********/
@@ -749,6 +958,11 @@ PRODUCT PAGE
         line-height: 40px;
         font-size: 20px;
     }
+    
+    /* CONTACT PAGE */
+    #form-subscription{
+        margin-bottom: 40px;
+    }
 
 }
 @media(max-width:767px){
@@ -782,6 +996,10 @@ PRODUCT PAGE
     }
     #newsletter form .input-group{
         width:100%;
+    }
+    /* CHECKOUT PAGE*/
+    .hide-on-small{
+        display: none;
     }
     
 
